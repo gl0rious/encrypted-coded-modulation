@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>aes.h</itemPath>
+      <itemPath>contex.h</itemPath>
+      <itemPath>ebno.h</itemPath>
+      <itemPath>image.h</itemPath>
+      <itemPath>intrlv.h</itemPath>
+      <itemPath>modmap.h</itemPath>
+      <itemPath>trellis.h</itemPath>
+      <itemPath>ttcm.h</itemPath>
+      <itemPath>utils.h</itemPath>
+      <itemPath>uttcm.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>aes.c</itemPath>
+      <itemPath>context.c</itemPath>
+      <itemPath>ebno.c</itemPath>
+      <itemPath>image.c</itemPath>
+      <itemPath>intrlv.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>modmap.c</itemPath>
+      <itemPath>trellis.c</itemPath>
+      <itemPath>ttcm.c</itemPath>
+      <itemPath>utils.c</itemPath>
+      <itemPath>uttcm.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <standard>10</standard>
+          <commandlineTool>gcc</commandlineTool>
+        </cTool>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+        <linkerTool>
+          <additionalDep>-lm</additionalDep>
+          <commandlineTool>gcc</commandlineTool>
+          <commandLine>-lm -lopenjp2</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="aes.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="aes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="contex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="context.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ebno.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ebno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="image.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="intrlv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="intrlv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trellis.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="trellis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ttcm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="utils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uttcm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="uttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1" platformSpecific="true">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+          <stripSymbols>true</stripSymbols>
+          <standard>10</standard>
+          <commandlineTool>gcc</commandlineTool>
+          <commandLine>-ffast-math -Ofast</commandLine>
+          <warningLevel>3</warningLevel>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <stripSymbols>true</stripSymbols>
+          <commandlineTool>gcc</commandlineTool>
+          <commandLine>-lm -lopenjp2 -lomp</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="aes.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="aes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="contex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="context.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ebno.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ebno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="image.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="intrlv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="intrlv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="modmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trellis.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="trellis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ttcm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="utils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uttcm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="uttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="clang_Release" type="1" platformSpecific="true">
+      <toolsSet>
+        <compilerSet>Clang|CLang</compilerSet>
+        <platform>2</platform>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>6</developmentMode>
+          <standard>10</standard>
+          <commandlineTool>clang</commandlineTool>
+          <commandLine>-ffast-math -Ofast</commandLine>
+          <warningLevel>3</warningLevel>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <stripSymbols>true</stripSymbols>
+          <commandlineTool>clang</commandlineTool>
+          <commandLine>-lm -lopenjp2 -lomp</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="aes.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="aes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="contex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="context.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="ebno.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ebno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="image.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="intrlv.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="intrlv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="modmap.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="modmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trellis.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="trellis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ttcm.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="ttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="utils.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uttcm.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="uttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="clang_Debug" type="1">
+      <toolsSet>
+        <compilerSet>Clang|CLang</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <architecture>2</architecture>
+          <standard>10</standard>
+          <commandlineTool>clang</commandlineTool>
+          <commandLine>-fstack-protector-all</commandLine>
+          <warningLevel>3</warningLevel>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <commandlineTool>clang</commandlineTool>
+          <commandLine>-lm -lopenjp2</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="aes.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="aes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="contex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="context.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="ebno.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ebno.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="image.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="intrlv.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="intrlv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="modmap.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="modmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="trellis.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="trellis.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ttcm.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="ttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="utils.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="uttcm.c" ex="false" tool="0" flavor2="10">
+      </item>
+      <item path="uttcm.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
